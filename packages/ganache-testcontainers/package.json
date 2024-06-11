@@ -1,0 +1,41 @@
+{
+  "name": "ganache-testcontainers",
+  "version": "0.0.0",
+  "private": false,
+  "repository": {
+    "url": "git+https://github.com/vetumorg/chainfile-ganache"
+  },
+  "license": "MPL-2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "clean": "rm -rf dist",
+    "lint": "eslint .",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --ignore-unknown"
+    ],
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "jest": {
+    "preset": "@workspace/jest-preset"
+  },
+  "dependencies": {
+    "testcontainers": "^10.9.0"
+  },
+  "devDependencies": {
+    "viem": "^2.13.7"
+  },
+  "peerDependencies": {
+    "viem": "^2"
+  }
+}
