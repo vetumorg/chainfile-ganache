@@ -10,6 +10,8 @@ updates:
       interval: 'weekly'
     groups:
       eslint:
-        patterns:
-          - 'eslint'
-          - '@eslint/*'
+        dependency-type: development
+        exclude-patterns:
+          - 'viem'
+          - 'chainfile-*'
+          - '@chainfile/*'
