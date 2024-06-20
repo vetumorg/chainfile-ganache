@@ -6,7 +6,7 @@ npm i -D ganache-testcontainers viem
 ```
 
 ```typescript
-import { afterAll, beforeAll, expect, it } from '@jest/globals';
+import { afterAll, beforeAll, expect, it } from '@workspace/jest/globals';
 
 import { GanacheClient, GanacheContainer, StartedGanacheContainer } from './index';
 

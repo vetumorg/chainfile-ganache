@@ -1,9 +1,9 @@
-import { ChainfileTestcontainers } from '@chainfile/testcontainers';
-import { afterAll, beforeAll, expect, it } from '@jest/globals';
+import { CFTestcontainers } from '@chainfile/testcontainers';
+import { afterAll, beforeAll, expect, it } from '@workspace/jest/globals';
 
 import localhost from './ganache.json';
 
-const testcontainers = new ChainfileTestcontainers(localhost);
+const testcontainers = new CFTestcontainers(localhost);
 
 beforeAll(async () => {
   await testcontainers.start();
