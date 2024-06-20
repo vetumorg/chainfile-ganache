@@ -2,7 +2,7 @@
   "$schema": "https://chainfile.org/schema.json",
   "caip2": "eip155:1337",
   "name": "Ganache",
-  "values": {
+  "params": {
     "version": {
       "description": "Ganache version to use. See github.com/trufflesuite/ganache/releases",
       "default": "v7.9.2"
@@ -13,7 +13,7 @@
     "ganache": {
       "image": "docker.io/trufflesuite/ganache",
       "tag": {
-        "$value": "version"
+        "$param": "version"
       },
       "source": "https://github.com/trufflesuite/ganache",
       "resources": {
