@@ -16,17 +16,5 @@ updates:
           - 'patch'
         exclude-patterns:
           - 'viem'
-          - 'eslint'
           - 'chainfile-*'
           - '@chainfile/*'
-      workspace:
-        update-types:
-          - 'minor'
-          - 'patch'
-        patterns:
-          - 'prettier-*'
-          - 'typescript-eslint'
-          - 'globals'
-          - '@eslint/*'
-          - 'eslint'
-          - 'eslint-*'
